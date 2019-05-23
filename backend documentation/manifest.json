@@ -1,0 +1,320 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/gaute/Downloads/NAS/Model",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "2JjFFJmL/PQqcYk4SG9rEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "jGGRbkmX+pB0mcIE2eDbtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "6W/Ogg8cqKsVDMM52b4z3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.Admin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.Admin.html",
+          "hash": "+7vxJcuolbxiE30x8bfjQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.AdminViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.AdminViewModel.html",
+          "hash": "qjkUuM/ocSS4noWMDd+cNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.CustomerLabels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.CustomerLabels.html",
+          "hash": "7Ud0imT3ueY8cs8+IqQt5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.CustomerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.CustomerResponse.html",
+          "hash": "JNWai93JlrKFHSdTqydMTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.DataCustomer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.DataCustomer.html",
+          "hash": "JsjEL8Nsf/lt79g1yqICyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.DataInvoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.DataInvoice.html",
+          "hash": "f16jrTHTcTPcQiK9rKfCcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.ErrorFiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.ErrorFiler.html",
+          "hash": "Kbv+cVNqzXLjqiTPRUv6cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.InvoiceResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.InvoiceResponse.html",
+          "hash": "aQjPp6fGqMNpQa0d0Njh4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.Meta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.Meta.html",
+          "hash": "P1UOb5jbkLjsPQ/y7mm81w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.Token.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.Token.html",
+          "hash": "dIIsf4/PyuG1A0suSCyvGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.User.html",
+          "hash": "HpE44qYJS7ePzBbEgxHeCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.UserApiModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.UserApiModel.html",
+          "hash": "tKP7sVfCmTldBrF0pUTqqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.UserViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.UserViewModel.html",
+          "hash": "4OqLXsLXv13SfeonMa7BlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.Model.html",
+          "hash": "sVOEvHCW3voHdJWjdIB8lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.VismaAuthProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.VismaAuthProvider.html",
+          "hash": "+cx5THowN5HuUj3b+6sdkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/NAS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NAS.html",
+          "hash": "iDAV1qPCy8KwPnrl8f47pQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "yC0ajhjbEbnHpKZEkXRsUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Sg+nKmnHP++YKMT39ruhpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 16,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

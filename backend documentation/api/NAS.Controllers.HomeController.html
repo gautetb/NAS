@@ -1,0 +1,885 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HomeController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HomeController
+   ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NAS.Controllers.HomeController">
+  
+  
+  <h1 id="NAS_Controllers_HomeController" data-uid="NAS.Controllers.HomeController" class="text-break">Class HomeController
+  </h1>
+  <div class="markdown level0 summary"><p>This is the controller that handles the front page of the admin site</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Web.Mvc.ControllerBase</span></div>
+    <div class="level2"><span class="xref">System.Web.Mvc.Controller</span></div>
+    <div class="level3"><span class="xref">HomeController</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Web.Mvc.IActionFilter</span></div>
+    <div><span class="xref">System.Web.Mvc.Filters.IAuthenticationFilter</span></div>
+    <div><span class="xref">System.Web.Mvc.IAuthorizationFilter</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Web.Mvc.IExceptionFilter</span></div>
+    <div><span class="xref">System.Web.Mvc.IResultFilter</span></div>
+    <div><span class="xref">System.Web.Mvc.Async.IAsyncController</span></div>
+    <div><span class="xref">System.Web.Mvc.IController</span></div>
+    <div><span class="xref">System.Web.Mvc.Async.IAsyncManagerContainer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Content(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Content(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Content(System.String, System.String, System.Text.Encoding)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.CreateActionInvoker()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.CreateTempDataProvider()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.ExecuteCore()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.File(System.Byte[], System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.File(System.Byte[], System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.File(System.IO.Stream, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.File(System.IO.Stream, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.File(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.File(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.HandleUnknownAction(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.HttpNotFound()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.HttpNotFound(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.JavaScript(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Json(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Json(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Json(System.Object, System.String, System.Text.Encoding)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Json(System.Object, System.Web.Mvc.JsonRequestBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Json(System.Object, System.String, System.Web.Mvc.JsonRequestBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Json(System.Object, System.String, System.Text.Encoding, System.Web.Mvc.JsonRequestBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Initialize(System.Web.Routing.RequestContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnAuthentication(System.Web.Mvc.Filters.AuthenticationContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnAuthenticationChallenge(System.Web.Mvc.Filters.AuthenticationChallengeContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnAuthorization(System.Web.Mvc.AuthorizationContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnException(System.Web.Mvc.ExceptionContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.PartialView()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.PartialView(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.PartialView(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.PartialView(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Redirect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToAction(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToAction(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToAction(System.String, System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToAction(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToAction(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToAction(System.String, System.String, System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToActionPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToActionPermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToActionPermanent(System.String, System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToActionPermanent(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToActionPermanent(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToActionPermanent(System.String, System.String, System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoute(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoute(System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoute(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoute(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoute(System.String, System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoutePermanent(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoutePermanent(System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoutePermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoutePermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RedirectToRoutePermanent(System.String, System.Web.Routing.RouteValueDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String, System.String[], System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String, System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String[], System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String, System.String[], System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryUpdateModel&lt;TModel&gt;(TModel, System.String, System.String[], System.String[], System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryValidateModel(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TryValidateModel(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String, System.String[], System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String, System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String[], System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String, System.String[], System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.UpdateModel&lt;TModel&gt;(TModel, System.String, System.String[], System.String[], System.Web.Mvc.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.ValidateModel(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.ValidateModel(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View()</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View(System.Web.Mvc.IView)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.View(System.Web.Mvc.IView, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.BeginExecute(System.Web.Routing.RequestContext, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.BeginExecute(System.Web.Routing.RequestContext, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.BeginExecuteCore(System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.EndExecute(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.EndExecuteCore(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.IActionFilter.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.IActionFilter.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.Filters.IAuthenticationFilter.OnAuthentication(System.Web.Mvc.Filters.AuthenticationContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.Filters.IAuthenticationFilter.OnAuthenticationChallenge(System.Web.Mvc.Filters.AuthenticationChallengeContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.IAuthorizationFilter.OnAuthorization(System.Web.Mvc.AuthorizationContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(System.Web.Mvc.ExceptionContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.IResultFilter.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.System.Web.Mvc.IResultFilter.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Resolver</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.AsyncManager</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.DisableAsyncSupport</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.ActionInvoker</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Binders</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.HttpContext</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.ModelState</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Profile</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Request</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Response</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.RouteData</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Server</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Session</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.TempDataProvider</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.Url</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.User</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.Controller.ViewEngineCollection</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.Execute(System.Web.Routing.RequestContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(System.Web.Routing.RequestContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.ControllerContext</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.TempData</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.ValidateRequest</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.ValueProvider</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.ViewBag</span>
+    </div>
+    <div>
+      <span class="xref">System.Web.Mvc.ControllerBase.ViewData</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NAS.Controllers.html">NAS.Controllers</a></h6>
+  <h6><strong>Assembly</strong>: NAS.dll</h6>
+  <h5 id="NAS_Controllers_HomeController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Authorize]
+public class HomeController : Controller, IActionFilter, IAuthenticationFilter, IAuthorizationFilter, IDisposable, IExceptionFilter, IResultFilter, IAsyncController, IController, IAsyncManagerContainer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController__ctor.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L24">View Source</a>
+  </span>
+  <a id="NAS_Controllers_HomeController__ctor_" data-uid="NAS.Controllers.HomeController.#ctor*"></a>
+  <h4 id="NAS_Controllers_HomeController__ctor" data-uid="NAS.Controllers.HomeController.#ctor">HomeController()</h4>
+  <div class="markdown level1 summary"><p>This constructor creates and instance of the class that uses the actual BLL and AuthenticatedUser for extracting information from the HttpContext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HomeController()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController__ctor_NAS_BLL_INasLogic_.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController.%23ctor(NAS.BLL.INasLogic)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L33">View Source</a>
+  </span>
+  <a id="NAS_Controllers_HomeController__ctor_" data-uid="NAS.Controllers.HomeController.#ctor*"></a>
+  <h4 id="NAS_Controllers_HomeController__ctor_NAS_BLL_INasLogic_" data-uid="NAS.Controllers.HomeController.#ctor(NAS.BLL.INasLogic)">HomeController(INasLogic)</h4>
+  <div class="markdown level1 summary"><p>Constructor that creates and instance of the user logic stub and a fake AuthenticatedUser for unit testing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HomeController(INasLogic stub)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.BLL.INasLogic</span></td>
+        <td><span class="parametername">stub</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController_AddUsersFromVisma.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController.AddUsersFromVisma%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L136">View Source</a>
+  </span>
+  <a id="NAS_Controllers_HomeController_AddUsersFromVisma_" data-uid="NAS.Controllers.HomeController.AddUsersFromVisma*"></a>
+  <h4 id="NAS_Controllers_HomeController_AddUsersFromVisma" data-uid="NAS.Controllers.HomeController.AddUsersFromVisma">AddUsersFromVisma()</h4>
+  <div class="markdown level1 summary"><p>Updates the userbase from visma.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionResult AddUsersFromVisma()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.Mvc.ActionResult</span></td>
+        <td><p>Redirects to index if the update was successful or the errorpage if something went wrong.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController_EditUser_NAS_Model_UserViewModel_.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController.EditUser(NAS.Model.UserViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L180">View Source</a>
+  </span>
+  <a id="NAS_Controllers_HomeController_EditUser_" data-uid="NAS.Controllers.HomeController.EditUser*"></a>
+  <h4 id="NAS_Controllers_HomeController_EditUser_NAS_Model_UserViewModel_" data-uid="NAS.Controllers.HomeController.EditUser(NAS.Model.UserViewModel)">EditUser(UserViewModel)</h4>
+  <div class="markdown level1 summary"><p>Posts the user from the form to be edited in the database. On successful update the admin is redirected to index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+public ActionResult EditUser(UserViewModel user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.UserViewModel</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>View model containing the user parameters to be changed in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.Mvc.ActionResult</span></td>
+        <td><p>On successful update the admin is returned to the index
+If the update is unsuccessful the viewmodel is returned to the view for another attempt. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController_EditUser_System_Int32_.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController.EditUser(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L166">View Source</a>
+  </span>
+  <a id="NAS_Controllers_HomeController_EditUser_" data-uid="NAS.Controllers.HomeController.EditUser*"></a>
+  <h4 id="NAS_Controllers_HomeController_EditUser_System_Int32_" data-uid="NAS.Controllers.HomeController.EditUser(System.Int32)">EditUser(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the view with the form for editing a user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionResult EditUser(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Database id of the user to be updated from the admin page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.Mvc.ActionResult</span></td>
+        <td><p>View with the user found in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController_Error.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController.Error%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L154">View Source</a>
+  </span>
+  <a id="NAS_Controllers_HomeController_Error_" data-uid="NAS.Controllers.HomeController.Error*"></a>
+  <h4 id="NAS_Controllers_HomeController_Error" data-uid="NAS.Controllers.HomeController.Error">Error()</h4>
+  <div class="markdown level1 summary"><p>Method to show the errorpage if something goes wrong when using the admin page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionResult Error()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.Mvc.ActionResult</span></td>
+        <td><p>Errorpage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController_Index_System_String_System_String_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController.Index(System.String%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L63">View Source</a>
+  </span>
+  <a id="NAS_Controllers_HomeController_Index_" data-uid="NAS.Controllers.HomeController.Index*"></a>
+  <h4 id="NAS_Controllers_HomeController_Index_System_String_System_String_System_String_System_Nullable_System_Int32__" data-uid="NAS.Controllers.HomeController.Index(System.String,System.String,System.String,System.Nullable{System.Int32})">Index(String, String, String, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>This methods shows the front page of the admin site. It includes a list of all users, with options to:
+<ul><li>Sort users.</li><li>Search based on names.</li><li>Edit users.</li></ul></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionResult Index(string searching, string sort, string currentFilter, int? page)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searching</span></td>
+        <td><p>Search string to search for spesific users in the searchfield on the front page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>String to determine in what order the list is supposed to be returned (and showed) in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currentFilter</span></td>
+        <td><p>Current filter from the viewbag to keep the search string when changing pages browsing through the users.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Which page the admin is currenty on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.Mvc.ActionResult</span></td>
+        <td><p>Returns a paged list of the users registered in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="NAS_Controllers_HomeController_Index_System_String_System_String_System_String_System_Nullable_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The view is a list of all the users show 10 at the time which are shown in different pages determined by the <code data-dev-comment-type="paramref" class="paramref">page</code> number.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Web.Mvc.IActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.Mvc.Filters.IAuthenticationFilter</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.Mvc.IAuthorizationFilter</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.Mvc.IExceptionFilter</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.Mvc.IResultFilter</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.Mvc.Async.IAsyncController</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.Mvc.IController</span>
+  </div>
+  <div>
+      <span class="xref">System.Web.Mvc.Async.IAsyncManagerContainer</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_Controllers_HomeController.md&amp;value=---%0Auid%3A%20NAS.Controllers.HomeController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Controllers/HomeController.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+
+01-May-19 16:23:14	System.NullReferenceException -> UserDAL, UpdateVismaToken
+01-May-19 16:24:45	System.NullReferenceException -> UserDAL, UpdateVismaToken
+03-May-19 12:11:42	System.NullReferenceException -> UserDAL, UpdateUser
+03-May-19 12:12:57	System.NullReferenceException -> UserDAL, UpdateUser
+03-May-19 12:14:02	System.NullReferenceException -> UserDAL, UpdateUser
+06-May-19 10:08:38	System.NullReferenceException -> UserBLL, UpdatePaymentDetails
+06-May-19 10:08:44	System.NullReferenceException -> UserBLL, UpdatePaymentDetails
+06-May-19 10:31:38	System.NullReferenceException -> UserBLL, UpdatePaymentDetails
+06-May-19 10:31:46	System.NullReferenceException -> UserBLL, UpdatePaymentDetails
+06-May-19 17:38:00	System.NullReferenceException -> UserDAL, RegisterUser
+06-May-19 20:37:30	System.NullReferenceException -> UserBLL, UpdatePaymentDetails
+06-May-19 20:37:40	System.NullReferenceException -> UserBLL, UpdatePaymentDetails
+07-May-19 17:30:13	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:14	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:30:15	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:48	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 17:34:49	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:23	System.ArgumentNullException -> UserDAL, UpdateUser
+07-May-19 18:20:32	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+07-May-19 18:20:34	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 10:49:35	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 10:54:59	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 10:55:33	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 12:00:25	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 14:55:50	System.ArgumentNullException -> UserDAL, UpdateUser
+08-May-19 17:54:46	System.NullReferenceException -> UserBLL, AddUsersFromVIsma, Legger til/oppdaterer brukere fra Visma til databasen
+08-May-19 17:58:19	System.Web.HttpException -> UserBLL, AddUsersFromVIsma, Legger til/oppdaterer brukere fra Visma til databasen
+08-May-19 19:45:08	System.ArgumentNullException -> UserBLL, AddUsersFromVIsma, Legger til/oppdaterer brukere fra Visma til databasen
+08-May-19 19:59:27	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 19:59:46	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 19:59:54	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 20:00:12	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+08-May-19 20:02:48	System.ArgumentNullException -> UserDAL, UpdateUser
+08-May-19 20:02:55	System.ArgumentNullException -> UserDAL, UpdateUser
+08-May-19 20:34:03	System.ArgumentNullException -> UserDAL, UpdateUser
+10-May-19 10:50:32	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+10-May-19 10:52:10	System.NullReferenceException -> UserBLL, DeterminePaymentStatus
+21-May-19 13:00:47	System.NullReferenceException -> NasBLL, bool DeterminePaymentStatus(User user, InvoiceResponse invoiceList)
+21-May-19 13:47:03	System.NullReferenceException -> NasBLL, bool DeterminePaymentStatus(User user, InvoiceResponse invoiceList)
+21-May-19 13:47:36	System.NullReferenceException -> NasBLL, bool DeterminePaymentStatus(User user, InvoiceResponse invoiceList)
+21-May-19 21:49:49	System.NullReferenceException -> NasBLL, bool DeterminePaymentStatus(User user, InvoiceResponse invoiceList)
+21-May-19 21:49:49	System.NullReferenceException -> NasBLL, bool DeterminePaymentStatus(User user, InvoiceResponse invoiceList)
+21-May-19 21:50:23	System.NullReferenceException -> NasBLL, bool DeterminePaymentStatus(User user, InvoiceResponse invoiceList)
+21-May-19 21:50:23	System.NullReferenceException -> NasBLL, bool DeterminePaymentStatus(User user, InvoiceResponse invoiceList)

@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAuthenticatedUser
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAuthenticatedUser
+   ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NAS.IAuthenticatedUser">
+  
+  
+  <h1 id="NAS_IAuthenticatedUser" data-uid="NAS.IAuthenticatedUser" class="text-break">Interface IAuthenticatedUser
+  </h1>
+  <div class="markdown level0 summary"><p>This is the interface for extracting information from the HttpContext. The AuthenticatedUser and a fake version implements this interface.
+This interface makes it possible to take advantage of polymorphism, making it easy for the controllers to invoke the actual AuthenticatedUser for regular operations
+or the fake on for unit testing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NAS.html">NAS</a></h6>
+  <h6><strong>Assembly</strong>: NAS.dll</h6>
+  <h5 id="NAS_IAuthenticatedUser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAuthenticatedUser</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_IAuthenticatedUser_GetUsername.md&amp;value=---%0Auid%3A%20NAS.IAuthenticatedUser.GetUsername%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/IAuthenticatedUser.cs/#L17">View Source</a>
+  </span>
+  <a id="NAS_IAuthenticatedUser_GetUsername_" data-uid="NAS.IAuthenticatedUser.GetUsername*"></a>
+  <h4 id="NAS_IAuthenticatedUser_GetUsername" data-uid="NAS.IAuthenticatedUser.GetUsername">GetUsername()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetUsername()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_IAuthenticatedUser_GetUsernameFromToken.md&amp;value=---%0Auid%3A%20NAS.IAuthenticatedUser.GetUsernameFromToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/IAuthenticatedUser.cs/#L18">View Source</a>
+  </span>
+  <a id="NAS_IAuthenticatedUser_GetUsernameFromToken_" data-uid="NAS.IAuthenticatedUser.GetUsernameFromToken*"></a>
+  <h4 id="NAS_IAuthenticatedUser_GetUsernameFromToken" data-uid="NAS.IAuthenticatedUser.GetUsernameFromToken">GetUsernameFromToken()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetUsernameFromToken()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_IAuthenticatedUser_LogOut.md&amp;value=---%0Auid%3A%20NAS.IAuthenticatedUser.LogOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/IAuthenticatedUser.cs/#L19">View Source</a>
+  </span>
+  <a id="NAS_IAuthenticatedUser_LogOut_" data-uid="NAS.IAuthenticatedUser.LogOut*"></a>
+  <h4 id="NAS_IAuthenticatedUser_LogOut" data-uid="NAS.IAuthenticatedUser.LogOut">LogOut()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogOut()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_IAuthenticatedUser_SetAuthCookie_System_String_.md&amp;value=---%0Auid%3A%20NAS.IAuthenticatedUser.SetAuthCookie(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/IAuthenticatedUser.cs/#L20">View Source</a>
+  </span>
+  <a id="NAS_IAuthenticatedUser_SetAuthCookie_" data-uid="NAS.IAuthenticatedUser.SetAuthCookie*"></a>
+  <h4 id="NAS_IAuthenticatedUser_SetAuthCookie_System_String_" data-uid="NAS.IAuthenticatedUser.SetAuthCookie(System.String)">SetAuthCookie(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetAuthCookie(string username)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_IAuthenticatedUser.md&amp;value=---%0Auid%3A%20NAS.IAuthenticatedUser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/IAuthenticatedUser.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

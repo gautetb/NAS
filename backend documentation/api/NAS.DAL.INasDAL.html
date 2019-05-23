@@ -1,0 +1,878 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface INasDAL
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface INasDAL
+   ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NAS.DAL.INasDAL">
+  
+  
+  <h1 id="NAS_DAL_INasDAL" data-uid="NAS.DAL.INasDAL" class="text-break">Interface INasDAL
+  </h1>
+  <div class="markdown level0 summary"><p>This is the interface for the data access layer of the application. The DAL and the DALstub implements this interface.
+This interface makes it possible to take advantage of polymorphism, making it easy for the controllers to invoke the actual DAL for regular operations
+or the stub for unit testing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NAS.DAL.html">NAS.DAL</a></h6>
+  <h6><strong>Assembly</strong>: DAL.dll</h6>
+  <h5 id="NAS_DAL_INasDAL_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface INasDAL</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_AddUser_NAS_Model_DataCustomer_System_String_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.AddUser(NAS.Model.DataCustomer%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L22">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_AddUser_" data-uid="NAS.DAL.INasDAL.AddUser*"></a>
+  <h4 id="NAS_DAL_INasDAL_AddUser_NAS_Model_DataCustomer_System_String_" data-uid="NAS.DAL.INasDAL.AddUser(NAS.Model.DataCustomer,System.String)">AddUser(DataCustomer, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddUser(DataCustomer customer, string membership)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.DataCustomer</span></td>
+        <td><span class="parametername">customer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">membership</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_CheckUser_System_Guid_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.CheckUser(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L24">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_CheckUser_" data-uid="NAS.DAL.INasDAL.CheckUser*"></a>
+  <h4 id="NAS_DAL_INasDAL_CheckUser_System_Guid_" data-uid="NAS.DAL.INasDAL.CheckUser(System.Guid)">CheckUser(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CheckUser(Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_GetActiveUserList.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.GetActiveUserList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L26">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_GetActiveUserList_" data-uid="NAS.DAL.INasDAL.GetActiveUserList*"></a>
+  <h4 id="NAS_DAL_INasDAL_GetActiveUserList" data-uid="NAS.DAL.INasDAL.GetActiveUserList">GetActiveUserList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;User&gt; GetActiveUserList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">NAS.Model.User</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_GetAdmin_NAS_Model_AdminViewModel_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.GetAdmin(NAS.Model.AdminViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L29">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_GetAdmin_" data-uid="NAS.DAL.INasDAL.GetAdmin*"></a>
+  <h4 id="NAS_DAL_INasDAL_GetAdmin_NAS_Model_AdminViewModel_" data-uid="NAS.DAL.INasDAL.GetAdmin(NAS.Model.AdminViewModel)">GetAdmin(AdminViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Admin GetAdmin(AdminViewModel admin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.AdminViewModel</span></td>
+        <td><span class="parametername">admin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.Admin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_GetToken.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.GetToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L23">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_GetToken_" data-uid="NAS.DAL.INasDAL.GetToken*"></a>
+  <h4 id="NAS_DAL_INasDAL_GetToken" data-uid="NAS.DAL.INasDAL.GetToken">GetToken()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAuthorizationState GetToken()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DotNetOpenAuth.OAuth2.IAuthorizationState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_GetUser_System_Int32_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.GetUser(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L19">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_GetUser_" data-uid="NAS.DAL.INasDAL.GetUser*"></a>
+  <h4 id="NAS_DAL_INasDAL_GetUser_System_Int32_" data-uid="NAS.DAL.INasDAL.GetUser(System.Int32)">GetUser(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserViewModel GetUser(int Id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.UserViewModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_GetUserDb_System_String_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.GetUserDb(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L21">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_GetUserDb_" data-uid="NAS.DAL.INasDAL.GetUserDb*"></a>
+  <h4 id="NAS_DAL_INasDAL_GetUserDb_System_String_" data-uid="NAS.DAL.INasDAL.GetUserDb(System.String)">GetUserDb(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">User GetUserDb(string username)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.User</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_GetUserList_System_String_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.GetUserList(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L25">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_GetUserList_" data-uid="NAS.DAL.INasDAL.GetUserList*"></a>
+  <h4 id="NAS_DAL_INasDAL_GetUserList_System_String_" data-uid="NAS.DAL.INasDAL.GetUserList(System.String)">GetUserList(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;User&gt; GetUserList(string search)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">NAS.Model.User</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_RegisterAdmin_NAS_Model_AdminViewModel_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.RegisterAdmin(NAS.Model.AdminViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L31">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_RegisterAdmin_" data-uid="NAS.DAL.INasDAL.RegisterAdmin*"></a>
+  <h4 id="NAS_DAL_INasDAL_RegisterAdmin_NAS_Model_AdminViewModel_" data-uid="NAS.DAL.INasDAL.RegisterAdmin(NAS.Model.AdminViewModel)">RegisterAdmin(AdminViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RegisterAdmin(AdminViewModel innAdmin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.AdminViewModel</span></td>
+        <td><span class="parametername">innAdmin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_RegisterUser_NAS_Model_User_System_String_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.RegisterUser(NAS.Model.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L27">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_RegisterUser_" data-uid="NAS.DAL.INasDAL.RegisterUser*"></a>
+  <h4 id="NAS_DAL_INasDAL_RegisterUser_NAS_Model_User_System_String_" data-uid="NAS.DAL.INasDAL.RegisterUser(NAS.Model.User,System.String)">RegisterUser(User, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RegisterUser(User innUser, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.User</span></td>
+        <td><span class="parametername">innUser</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_UpdatePaymentDetails_NAS_Model_User_System_Boolean_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.UpdatePaymentDetails(NAS.Model.User%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L32">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_UpdatePaymentDetails_" data-uid="NAS.DAL.INasDAL.UpdatePaymentDetails*"></a>
+  <h4 id="NAS_DAL_INasDAL_UpdatePaymentDetails_NAS_Model_User_System_Boolean_" data-uid="NAS.DAL.INasDAL.UpdatePaymentDetails(NAS.Model.User,System.Boolean)">UpdatePaymentDetails(User, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdatePaymentDetails(User user, bool paymentStatus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.User</span></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">paymentStatus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_UpdateUserAsAdmin_NAS_Model_UserViewModel_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.UpdateUserAsAdmin(NAS.Model.UserViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L34">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_UpdateUserAsAdmin_" data-uid="NAS.DAL.INasDAL.UpdateUserAsAdmin*"></a>
+  <h4 id="NAS_DAL_INasDAL_UpdateUserAsAdmin_NAS_Model_UserViewModel_" data-uid="NAS.DAL.INasDAL.UpdateUserAsAdmin(NAS.Model.UserViewModel)">UpdateUserAsAdmin(UserViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateUserAsAdmin(UserViewModel user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.UserViewModel</span></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_UpdateUserFromVisma_NAS_Model_DataCustomer_System_String_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.UpdateUserFromVisma(NAS.Model.DataCustomer%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L35">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_UpdateUserFromVisma_" data-uid="NAS.DAL.INasDAL.UpdateUserFromVisma*"></a>
+  <h4 id="NAS_DAL_INasDAL_UpdateUserFromVisma_NAS_Model_DataCustomer_System_String_" data-uid="NAS.DAL.INasDAL.UpdateUserFromVisma(NAS.Model.DataCustomer,System.String)">UpdateUserFromVisma(DataCustomer, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateUserFromVisma(DataCustomer user, string membership)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.DataCustomer</span></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">membership</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_UpdateVismaToken_DotNetOpenAuth_OAuth2_IAuthorizationState_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.UpdateVismaToken(DotNetOpenAuth.OAuth2.IAuthorizationState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L33">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_UpdateVismaToken_" data-uid="NAS.DAL.INasDAL.UpdateVismaToken*"></a>
+  <h4 id="NAS_DAL_INasDAL_UpdateVismaToken_DotNetOpenAuth_OAuth2_IAuthorizationState_" data-uid="NAS.DAL.INasDAL.UpdateVismaToken(DotNetOpenAuth.OAuth2.IAuthorizationState)">UpdateVismaToken(IAuthorizationState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateVismaToken(IAuthorizationState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DotNetOpenAuth.OAuth2.IAuthorizationState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_ValidatedAdmin_System_String_System_String_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.ValidatedAdmin(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L30">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_ValidatedAdmin_" data-uid="NAS.DAL.INasDAL.ValidatedAdmin*"></a>
+  <h4 id="NAS_DAL_INasDAL_ValidatedAdmin_System_String_System_String_" data-uid="NAS.DAL.INasDAL.ValidatedAdmin(System.String,System.String)">ValidatedAdmin(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Admin ValidatedAdmin(string username, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.Admin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL_ValidateUser_System_String_System_String_.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL.ValidateUser(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L28">View Source</a>
+  </span>
+  <a id="NAS_DAL_INasDAL_ValidateUser_" data-uid="NAS.DAL.INasDAL.ValidateUser*"></a>
+  <h4 id="NAS_DAL_INasDAL_ValidateUser_System_String_System_String_" data-uid="NAS.DAL.INasDAL.ValidateUser(System.String,System.String)">ValidateUser(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ValidateUser(string username, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_DAL_INasDAL.md&amp;value=---%0Auid%3A%20NAS.DAL.INasDAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/DAL/INasDAL.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

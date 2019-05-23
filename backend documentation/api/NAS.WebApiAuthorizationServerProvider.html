@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebApiAuthorizationServerProvider
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebApiAuthorizationServerProvider
+   ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NAS.WebApiAuthorizationServerProvider">
+  
+  
+  <h1 id="NAS_WebApiAuthorizationServerProvider" data-uid="NAS.WebApiAuthorizationServerProvider" class="text-break">Class WebApiAuthorizationServerProvider
+  </h1>
+  <div class="markdown level0 summary"><p>This class handles the authentication and authorization to the web api, by giving access tokens to the users if they are validated in the database</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider</span></div>
+    <div class="level2"><span class="xref">WebApiAuthorizationServerProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.Owin.Security.OAuth.IOAuthAuthorizationServerProvider</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.MatchEndpoint(Microsoft.Owin.Security.OAuth.OAuthMatchEndpointContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.ValidateClientRedirectUri(Microsoft.Owin.Security.OAuth.OAuthValidateClientRedirectUriContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.ValidateAuthorizeRequest(Microsoft.Owin.Security.OAuth.OAuthValidateAuthorizeRequestContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.ValidateTokenRequest(Microsoft.Owin.Security.OAuth.OAuthValidateTokenRequestContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.GrantAuthorizationCode(Microsoft.Owin.Security.OAuth.OAuthGrantAuthorizationCodeContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.GrantRefreshToken(Microsoft.Owin.Security.OAuth.OAuthGrantRefreshTokenContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.GrantClientCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantClientCredentialsContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.GrantCustomExtension(Microsoft.Owin.Security.OAuth.OAuthGrantCustomExtensionContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.AuthorizeEndpoint(Microsoft.Owin.Security.OAuth.OAuthAuthorizeEndpointContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.TokenEndpoint(Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.AuthorizationEndpointResponse(Microsoft.Owin.Security.OAuth.OAuthAuthorizationEndpointResponseContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.TokenEndpointResponse(Microsoft.Owin.Security.OAuth.OAuthTokenEndpointResponseContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnMatchEndpoint</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnValidateClientRedirectUri</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnValidateClientAuthentication</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnValidateAuthorizeRequest</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnValidateTokenRequest</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnGrantAuthorizationCode</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnGrantResourceOwnerCredentials</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnGrantClientCredentials</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnGrantRefreshToken</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnGrantCustomExtension</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnAuthorizeEndpoint</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnTokenEndpoint</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnAuthorizationEndpointResponse</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OnTokenEndpointResponse</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NAS.html">NAS</a></h6>
+  <h6><strong>Assembly</strong>: NAS.dll</h6>
+  <h5 id="NAS_WebApiAuthorizationServerProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebApiAuthorizationServerProvider : OAuthAuthorizationServerProvider, IOAuthAuthorizationServerProvider</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_WebApiAuthorizationServerProvider_GrantResourceOwnerCredentials_Microsoft_Owin_Security_OAuth_OAuthGrantResourceOwnerCredentialsContext_.md&amp;value=---%0Auid%3A%20NAS.WebApiAuthorizationServerProvider.GrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/WebApiAuthProvider.cs/#L33">View Source</a>
+  </span>
+  <a id="NAS_WebApiAuthorizationServerProvider_GrantResourceOwnerCredentials_" data-uid="NAS.WebApiAuthorizationServerProvider.GrantResourceOwnerCredentials*"></a>
+  <h4 id="NAS_WebApiAuthorizationServerProvider_GrantResourceOwnerCredentials_Microsoft_Owin_Security_OAuth_OAuthGrantResourceOwnerCredentialsContext_" data-uid="NAS.WebApiAuthorizationServerProvider.GrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)">GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext)</h4>
+  <div class="markdown level1 summary"><p>This method validates the user asking for a token from the authorization endpoint, by checking the Username and Password fields of the context provided.
+When the user is validated the username is added to the token in order to determine which user is asking for a protected resource in the UserController.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task to enable asynchronous execution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.GrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_WebApiAuthorizationServerProvider_ValidateClientAuthentication_Microsoft_Owin_Security_OAuth_OAuthValidateClientAuthenticationContext_.md&amp;value=---%0Auid%3A%20NAS.WebApiAuthorizationServerProvider.ValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/WebApiAuthProvider.cs/#L21">View Source</a>
+  </span>
+  <a id="NAS_WebApiAuthorizationServerProvider_ValidateClientAuthentication_" data-uid="NAS.WebApiAuthorizationServerProvider.ValidateClientAuthentication*"></a>
+  <h4 id="NAS_WebApiAuthorizationServerProvider_ValidateClientAuthentication_Microsoft_Owin_Security_OAuth_OAuthValidateClientAuthenticationContext_" data-uid="NAS.WebApiAuthorizationServerProvider.ValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)">ValidateClientAuthentication(OAuthValidateClientAuthenticationContext)</h4>
+  <div class="markdown level1 summary"><p>This method validates the user asking for resources from the closed methods in the UserController based on the token they have.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task to enable asynchronous execution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.ValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.Owin.Security.OAuth.IOAuthAuthorizationServerProvider</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_WebApiAuthorizationServerProvider.md&amp;value=---%0Auid%3A%20NAS.WebApiAuthorizationServerProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/NAS/Authorization/WebApiAuthProvider.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

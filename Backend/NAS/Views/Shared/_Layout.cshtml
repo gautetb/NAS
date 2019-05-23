@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body >
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Hjem", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        @if (@ViewBag.CurrentUser != null)
+                        {
+                            @Html.ActionLink("Oppdater kundebase", "AddUsersFromVisma", "Home", new { area = "" }, null)
+                        }
+                    </li>
+
+                    <li>
+                    @if (@ViewBag.CurrentUser != null)
+                    {
+
+                        @Html.ActionLink("Registrer Administrator", "RegisterAdmin", "Admin", new { area = "" }, null)
+                    }
+                    </li>
+                    <li>
+                        @if (@ViewBag.CurrentUser == null)
+                        {
+
+                            //  @Html.ActionLink("Registrer", "Registrer", "Home")
+                        }
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        @if (@ViewBag.CurrentUser != null)
+                        {
+                        <p class="navbar-text">Logget inn som @ViewBag.CurrentUser</p>
+                        }
+                        
+                    </li>
+                    <li>                            
+                        @if (@ViewBag.CurrentUser != null)
+                        {
+
+                            @Html.ActionLink("Logout", "Logout", "Admin", null, new { @class = "btn btn-default btn-info" })
+                        }
+                    </li>
+                    <li>
+                        @if (@ViewBag.CurrentUser == null)
+                        {
+
+                            @Html.ActionLink("Login", "Login", "Admin", null, new { @class = "btn btn-default btn-info" })
+                        }
+                    </li>
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content ">
+        <br />      
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Administrasjonsside for Norsk Arkeologisk Selskap sin medlemsapp</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,911 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NasBLL
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NasBLL
+   ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NAS.BLL.NasBLL">
+  
+  
+  <h1 id="NAS_BLL_NasBLL" data-uid="NAS.BLL.NasBLL" class="text-break">Class NasBLL
+  </h1>
+  <div class="markdown level0 summary"><p>This is the business logic layer of the application. It contains all the evaluation of the information received from Visma as well as sending requests to the data access layer.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NasBLL</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NAS.BLL.INasLogic.html">INasLogic</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NAS.BLL.html">NAS.BLL</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="NAS_BLL_NasBLL_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NasBLL : INasLogic</code></pre>
+  </div>
+  <h5 id="NAS_BLL_NasBLL_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class handles all the data requests sent to both Vismas servers as well as the database. It also updates the user base from the membership base in Visma eAccounting</p>
+<p>The class can also determine the payment status and type of membership of the members obtained from Visma eAccounting </p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL__ctor.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L25">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL__ctor_" data-uid="NAS.BLL.NasBLL.#ctor*"></a>
+  <h4 id="NAS_BLL_NasBLL__ctor" data-uid="NAS.BLL.NasBLL.#ctor">NasBLL()</h4>
+  <div class="markdown level1 summary"><p>This constructor creates and instance of the class that uses the actual data access layer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NasBLL()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL__ctor_NAS_DAL_INasDAL_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.%23ctor(NAS.DAL.INasDAL)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L34">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL__ctor_" data-uid="NAS.BLL.NasBLL.#ctor*"></a>
+  <h4 id="NAS_BLL_NasBLL__ctor_NAS_DAL_INasDAL_" data-uid="NAS.BLL.NasBLL.#ctor(NAS.DAL.INasDAL)">NasBLL(INasDAL)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates and instance of the class that uses a stub of the data access layer for testing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NasBLL(INasDAL stub)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.DAL.INasDAL</span></td>
+        <td><span class="parametername">stub</span></td>
+        <td><p>A mock of the data access layer for testing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_DetermineMembership_NAS_Model_DataCustomer_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.DetermineMembership(NAS.Model.DataCustomer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L372">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_DetermineMembership_" data-uid="NAS.BLL.NasBLL.DetermineMembership*"></a>
+  <h4 id="NAS_BLL_NasBLL_DetermineMembership_NAS_Model_DataCustomer_" data-uid="NAS.BLL.NasBLL.DetermineMembership(NAS.Model.DataCustomer)">DetermineMembership(DataCustomer)</h4>
+  <div class="markdown level1 summary"><p>Determines the type of membership the user has from customer details from Visma.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DetermineMembership(DataCustomer customer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.DataCustomer</span></td>
+        <td><span class="parametername">customer</span></td>
+        <td><p>A user gotten from the Visma eAccounting API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A <code>string</code> containing the type of membership the user has.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_GetAdmin_NAS_Model_AdminViewModel_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.GetAdmin(NAS.Model.AdminViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L107">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_GetAdmin_" data-uid="NAS.BLL.NasBLL.GetAdmin*"></a>
+  <h4 id="NAS_BLL_NasBLL_GetAdmin_NAS_Model_AdminViewModel_" data-uid="NAS.BLL.NasBLL.GetAdmin(NAS.Model.AdminViewModel)">GetAdmin(AdminViewModel)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to get an administrator from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Admin GetAdmin(AdminViewModel admin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.AdminViewModel</span></td>
+        <td><span class="parametername">admin</span></td>
+        <td><p>Administrator view model from the admin site.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.Admin</span></td>
+        <td><p>A valid administrator if it is successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_GetCustomerListFromVisma.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.GetCustomerListFromVisma%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L501">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_GetCustomerListFromVisma_" data-uid="NAS.BLL.NasBLL.GetCustomerListFromVisma*"></a>
+  <h4 id="NAS_BLL_NasBLL_GetCustomerListFromVisma" data-uid="NAS.BLL.NasBLL.GetCustomerListFromVisma">GetCustomerListFromVisma()</h4>
+  <div class="markdown level1 summary"><p>Requests a list of customers from Visma, using a valid token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomerResponse GetCustomerListFromVisma()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.CustomerResponse</span></td>
+        <td><p>List of invoices</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_GetInvoiceListFromVisma.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.GetInvoiceListFromVisma%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L475">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_GetInvoiceListFromVisma_" data-uid="NAS.BLL.NasBLL.GetInvoiceListFromVisma*"></a>
+  <h4 id="NAS_BLL_NasBLL_GetInvoiceListFromVisma" data-uid="NAS.BLL.NasBLL.GetInvoiceListFromVisma">GetInvoiceListFromVisma()</h4>
+  <div class="markdown level1 summary"><p>Requests a list of invoices from Visma, using a valid token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InvoiceResponse GetInvoiceListFromVisma()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.InvoiceResponse</span></td>
+        <td><p>List of invoices</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_GetUser_System_Int32_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.GetUser(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L58">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_GetUser_" data-uid="NAS.BLL.NasBLL.GetUser*"></a>
+  <h4 id="NAS_BLL_NasBLL_GetUser_System_Int32_" data-uid="NAS.BLL.NasBLL.GetUser(System.Int32)">GetUser(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to get a user based on the users id in the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserViewModel GetUser(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The users id in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.UserViewModel</span></td>
+        <td><p>A valid user as UserViewModel if it is successful or a user with an error message if its unsuccessful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_GetUser_System_String_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.GetUser(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L144">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_GetUser_" data-uid="NAS.BLL.NasBLL.GetUser*"></a>
+  <h4 id="NAS_BLL_NasBLL_GetUser_System_String_" data-uid="NAS.BLL.NasBLL.GetUser(System.String)">GetUser(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a user for the web api based on the username provided. This is after determining if the user has valid payment status and updating the user in the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserApiModel GetUser(string username)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>Username of the user trying to access their info in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.UserApiModel</span></td>
+        <td><p>User in the form of web api model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_GetUserList_System_String_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.GetUserList(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L95">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_GetUserList_" data-uid="NAS.BLL.NasBLL.GetUserList*"></a>
+  <h4 id="NAS_BLL_NasBLL_GetUserList_System_String_" data-uid="NAS.BLL.NasBLL.GetUserList(System.String)">GetUserList(String)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to get a list of users with names that contain the search string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;User&gt; GetUserList(string search)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>Search string to match with the names of users.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">NAS.Model.User</span>&gt;</td>
+        <td><p>User list with users with names that contains the search string. Returns all users if the string is null. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_RegisterAdmin_NAS_Model_AdminViewModel_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.RegisterAdmin(NAS.Model.AdminViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L132">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_RegisterAdmin_" data-uid="NAS.BLL.NasBLL.RegisterAdmin*"></a>
+  <h4 id="NAS_BLL_NasBLL_RegisterAdmin_NAS_Model_AdminViewModel_" data-uid="NAS.BLL.NasBLL.RegisterAdmin(NAS.Model.AdminViewModel)">RegisterAdmin(AdminViewModel)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to register a new administrator in the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterAdmin(AdminViewModel innAdmin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.AdminViewModel</span></td>
+        <td><span class="parametername">innAdmin</span></td>
+        <td><p>A new administrator from the registration form on the admin site.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> if it is successful</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_RegisterUser_NAS_Model_UserViewModel_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.RegisterUser(NAS.Model.UserViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L191">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_RegisterUser_" data-uid="NAS.BLL.NasBLL.RegisterUser*"></a>
+  <h4 id="NAS_BLL_NasBLL_RegisterUser_NAS_Model_UserViewModel_" data-uid="NAS.BLL.NasBLL.RegisterUser(NAS.Model.UserViewModel)">RegisterUser(UserViewModel)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to register a password to an existing member from the mobile application. This is after determining if the member has a user in the database as well as valid payment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RegisterUser(UserViewModel innUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.UserViewModel</span></td>
+        <td><span class="parametername">innUser</span></td>
+        <td><p>A user with username and password to be registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p><code>string</code> containing &quot;Success&quot; if successful or an error message describing what went wrong.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_RequestToken.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.RequestToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L439">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_RequestToken_" data-uid="NAS.BLL.NasBLL.RequestToken*"></a>
+  <h4 id="NAS_BLL_NasBLL_RequestToken" data-uid="NAS.BLL.NasBLL.RequestToken">RequestToken()</h4>
+  <div class="markdown level1 summary"><p>Redirects an administrator from the admin site to Vismas authentication server to get an access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequestToken()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> if it is successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_UpdateUserAsAdmin_NAS_Model_UserViewModel_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.UpdateUserAsAdmin(NAS.Model.UserViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L46">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_UpdateUserAsAdmin_" data-uid="NAS.BLL.NasBLL.UpdateUserAsAdmin*"></a>
+  <h4 id="NAS_BLL_NasBLL_UpdateUserAsAdmin_NAS_Model_UserViewModel_" data-uid="NAS.BLL.NasBLL.UpdateUserAsAdmin(NAS.Model.UserViewModel)">UpdateUserAsAdmin(UserViewModel)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to update a user from the admin site and returns a boolean determining if it was successful or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateUserAsAdmin(UserViewModel user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.UserViewModel</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User to be updated in the DAL</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> if the update was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_UpdateUserBase.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.UpdateUserBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L235">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_UpdateUserBase_" data-uid="NAS.BLL.NasBLL.UpdateUserBase*"></a>
+  <h4 id="NAS_BLL_NasBLL_UpdateUserBase" data-uid="NAS.BLL.NasBLL.UpdateUserBase">UpdateUserBase()</h4>
+  <div class="markdown level1 summary"><p>A method that invokes the methods to add and update users from the member list in Visma eAccounting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateUserBase()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> if both methods are invokes successfully</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_UpdateVismaToken_DotNetOpenAuth_OAuth2_IAuthorizationState_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.UpdateVismaToken(DotNetOpenAuth.OAuth2.IAuthorizationState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L83">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_UpdateVismaToken_" data-uid="NAS.BLL.NasBLL.UpdateVismaToken*"></a>
+  <h4 id="NAS_BLL_NasBLL_UpdateVismaToken_DotNetOpenAuth_OAuth2_IAuthorizationState_" data-uid="NAS.BLL.NasBLL.UpdateVismaToken(DotNetOpenAuth.OAuth2.IAuthorizationState)">UpdateVismaToken(IAuthorizationState)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to update an access token received from the Visma eAccounting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateVismaToken(IAuthorizationState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DotNetOpenAuth.OAuth2.IAuthorizationState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>Access token from the Visma eAccounting API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> if the update was successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_ValidatedAdmin_System_String_System_String_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.ValidatedAdmin(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L120">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_ValidatedAdmin_" data-uid="NAS.BLL.NasBLL.ValidatedAdmin*"></a>
+  <h4 id="NAS_BLL_NasBLL_ValidatedAdmin_System_String_System_String_" data-uid="NAS.BLL.NasBLL.ValidatedAdmin(System.String,System.String)">ValidatedAdmin(String, String)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to validate an administrator in the database based on the username <code data-dev-comment-type="paramref" class="paramref">username</code> and password <code data-dev-comment-type="paramref" class="paramref">password</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Admin ValidatedAdmin(string username, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>The administrators username in the database.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The administrators password in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NAS.Model.Admin</span></td>
+        <td><p><code>True</code> if user exits and the password matches.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL_ValidateUser_System_String_System_String_.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL.ValidateUser(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L71">View Source</a>
+  </span>
+  <a id="NAS_BLL_NasBLL_ValidateUser_" data-uid="NAS.BLL.NasBLL.ValidateUser*"></a>
+  <h4 id="NAS_BLL_NasBLL_ValidateUser_System_String_System_String_" data-uid="NAS.BLL.NasBLL.ValidateUser(System.String,System.String)">ValidateUser(String, String)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the DAL to validate a user in the database based on the <code data-dev-comment-type="paramref" class="paramref">username</code> and <code data-dev-comment-type="paramref" class="paramref">password</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateUser(string username, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>The users username in the database.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The users password in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> if user exits and the password matches.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NAS.BLL.INasLogic.html">INasLogic</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/new/dev_gaute/apiSpec/new?filename=NAS_BLL_NasBLL.md&amp;value=---%0Auid%3A%20NAS.BLL.NasBLL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gautetb/bachelor/blob/dev_gaute/BLL/NasBLL.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

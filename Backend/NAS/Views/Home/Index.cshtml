@@ -1,0 +1,88 @@
+﻿@model PagedList.IPagedList<NAS.Model.User>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+  
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">Søk</button>
+            </span>
+            @Html.TextBox("searching", ViewBag.CurrentFilter as string, new { @class = "form-control", placeholder = "Søk på navn..", type = "text" })
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+
+}
+
+<br/>
+
+<br />
+
+<table class="table">
+    
+    <tr>
+        <th>
+            @Html.ActionLink("Navn", "Index", new { sort = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            @Html.ActionLink("Brukernavn", "Index", new { sort = ViewBag.UsernameSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            @Html.ActionLink("Gyldig betaling", "Index", new { sort = ViewBag.ValidPaymentSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            @Html.ActionLink("Aktiv bruker", "Index", new { sort = ViewBag.ActiveUserSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            @Html.ActionLink("Medlemskap", "Index", new { sort = ViewBag.MembershipSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @if (item.ValidPayment)
+                {
+                    <span class="label label-success">Ja</span>
+                }
+                else
+                {
+                    <span class="label label-warning">Nei</span>
+                }
+            </td>
+            <td>
+                @if (item.ActiveUser)
+                {
+                    <span class="label label-success">Ja</span>
+                }
+                else
+                {
+                    <span class="label label-warning">Nei</span>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Membership)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditUser", new { id = item.Id }, new { @class = "btn btn-success" })
+            </td>
+        </tr>
+        }
+
+</table>
+
+@Html.PagedListPager(Model, page=>Url.Action("Index",new{page, sort = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+Viser bruker @Model.FirstItemOnPage til @Model.LastItemOnPage av @Model.TotalItemCount brukere totalt
